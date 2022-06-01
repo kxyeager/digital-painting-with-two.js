@@ -1,5 +1,18 @@
 /* My Styles */
 
+/* Optional CSS Styling */
+
+/* Center to page */
 body {
-    background-color: lightsteelblue;
-}
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: lightsteelblue;
+  }
+  
+  /* diagnostic styling */
+  section {
+    background: ;
+  }
+  
