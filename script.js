@@ -20,10 +20,6 @@ https://codepen.io/manikoth/pen/gOvXvGZ.js
 // Make an instance of two and place it on the page.
 const container = document.querySelector("section");
 
-// let params = { width: 500, height: 500 };
-// const two = new Two(params);
-// two.appendTo(container);
-
 const two = new Two({
     type: Two.Types.svg,
     fullscreen: true,
@@ -35,7 +31,10 @@ let shapes = [];
 const loopDuration = 240;
 const numberOfShapes = 40;
 const shapeIncr = 20;
-const timeIncr = 1 / 120;
+
+const shapeSpeed = .6;
+const timeIncr = 1 / 311;
+
 
 for (i = 0; i < numberOfShapes; i++) {
   // biggest shape first!
@@ -52,6 +51,7 @@ for (i = 0; i < numberOfShapes; i++) {
   } else {
     shape.fill = "hsl(11, 79%, 89%)";
   }
+  
 
   shape.noStroke();
   shapes.push(shape);
@@ -77,8 +77,4 @@ two.bind("update", function (frameCount) {
 });
 
 two.play();
-
-
-// 
-
 
